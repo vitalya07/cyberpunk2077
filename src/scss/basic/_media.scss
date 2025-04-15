@@ -176,6 +176,10 @@
 }
 @media(max-width: 480px) {
     .header {
+        &__logo {
+            width: 200px;
+            height: 50px;
+        }
         &__list {
             gap: 28px;
             &-item {
