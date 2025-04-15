@@ -1,0 +1,15 @@
+@mixin wrapper1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin wrapper2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin wrapperStart {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}

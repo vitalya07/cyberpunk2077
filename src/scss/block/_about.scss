@@ -1,0 +1,43 @@
+.about {
+    padding: 70px 0;
+    &__title {
+        font-family: 'Archangelsk', sans-serif;
+        font-weight: 400;
+        font-size: 62px;
+        line-height: 100%;
+        color: $darkColor;
+        margin-bottom: 25px;
+    }
+    &__descr {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 34px;
+        color: $grayColor;
+        margin-bottom: 70px;
+        a {
+            font-weight: 700;
+            color: $blueColor;
+        }
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(460px, auto));
+        grid-template-rows: repeat(2, auto);
+        gap: 32px;
+    }
+    &__img {
+        &-one {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        &-two {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        &-three {
+            grid-column: 2/3;
+            grid-row: 1/3;
+        }
+    }
+}

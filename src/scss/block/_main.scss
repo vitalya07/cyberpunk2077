@@ -1,0 +1,53 @@
+.main {
+    &__item {
+        width: 100%;
+        height: 1000px;
+        position: relative;
+        &-img {
+            width: 100%;
+            height: 100%;
+        }
+        &-info {
+            position: absolute;
+            bottom: 0;
+            right: 320px;
+            width: 624px;
+            height: 369px;
+            z-index: 30;
+            &--img {                
+               width: 100%;
+               height: 100%;
+            }
+            &--title {
+                font-family: 'Archangelsk', sans-serif;
+                font-weight: 400;
+                font-size: 62px;
+                line-height: 100%;
+                color: $darkColor;
+                position: absolute;
+                top: 70px;
+                right: 70px;
+                left: 70px;
+            }
+            &--btn {
+                width: 272px;
+                height: 78px;
+                padding: 19px 50px;
+                background-color: $darkColor;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 40px;
+                text-align: center;
+                color: $yelowColor;
+                position: absolute;
+                bottom: 70px;
+                left: 70px;
+                transition: all .4s ease;
+                &:hover {
+                    background-color: $blueColor;
+                }
+            }
+        }
+    }
+}
