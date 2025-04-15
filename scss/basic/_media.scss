@@ -26,6 +26,11 @@
             }            
         }
     }
+    .hp {
+        &__container {
+            padding: 70px 36px;
+        }
+    }
 }
 @media (max-width: 1024px) {
     .main {
@@ -65,7 +70,6 @@
         }
         &__wrapper {
             align-items: start;
-            height: 320px;
         }
         &__prizes {
             position: relative;
@@ -81,6 +85,44 @@
                 width: 215px;
                 height: 260px;
             }            
+        }
+    }
+    .hp {
+        &__left {
+            width: 460px;
+            &-img {
+                width: 460px;
+                height: 316px;
+            }
+            &-flex {
+                flex-direction: column;
+            }
+        }
+        &__right {
+            max-width: 460px;
+        }
+    }
+}
+@media(max-width:993px) {
+    .hp {
+        &__left {
+            width: 360px;
+            &-img {
+                width: 360px;
+                height: 316px;
+            }
+            &-flex {
+                flex-direction: column;
+            }
+        }
+        &__right {
+            max-width: 360px;
+            &-title {
+                font-size: 50px;
+            }
+            &-descr {
+                font-size: 16px;
+            }
         }
     }
 }
@@ -156,9 +198,10 @@
         }
         &__wrapper {
             display: block;
+            height: 400px;
         }
         &__prizes {
-            bottom: 860px;
+            bottom: 900px;
             &-wrapper {
                 flex-direction: row;
                 gap: 20px;
@@ -171,6 +214,38 @@
                 width: 140px;
                 height: 170px;
             }
+        }
+    }
+    .hp {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__left {
+            width: 100%;
+            max-width: 100%;
+            &-icon {
+                width: 60px;
+                height: 60px;
+            }
+            &-chewron {
+                width: 70px;
+                height: 16px;
+            }
+            &-logo {
+                width: 260px;
+                height: 60px;
+            }
+            &-img {
+                width: 100%;
+                height: auto;
+            }
+            &-flex {
+                flex-direction: row;
+            }
+        }
+        &__right {
+            width: 100%;
+            max-width: 100%;
         }
     }
 }
@@ -228,7 +303,7 @@
             }
         }
         &__prizes {
-            bottom: 790px;
+            bottom: 810px;
         }
         &__prize {
             width: 132px;
@@ -236,6 +311,45 @@
             &-img {
                 width: 85px;
                 height: 100px;
+            }
+        }
+    }
+    .hp {
+        &__container {
+            padding: 70px 13px;
+        }
+        &__left {
+            width: 100%;
+            max-width: 100%;
+            &-icon {
+                width: 43px;
+                height: 43px;
+            }
+            &-chewron {
+                width: 50px;
+                height: 10px;
+            }
+            &-logo {
+                width: 175px;
+                height: 44px;
+            }
+        }
+        &__right {
+            width: 100%;
+            max-width: 100%;
+            &-title {
+                font-size: 30px;
+            }
+            &-list {
+                &--item {
+                    &__img {
+                        width: 24px;
+                        height: 24px;
+                    }
+                    &__descr {
+                        font-size: 16px;
+                    }
+                }
             }
         }
     }
@@ -248,14 +362,21 @@
             }
         }
         &__prizes {
-            bottom: 795px
+            bottom: 820px
         }
     }
 }
 @media (max-width: 330px) {
     .action {
         &__prizes {
-            bottom: 830px
+            bottom: 880px
+        }
+    }
+}
+@media (max-width: 300px) {
+    .action {
+        &__prizes {
+            bottom: 900px
         }
     }
 }

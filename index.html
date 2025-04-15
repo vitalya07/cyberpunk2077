@@ -50,7 +50,7 @@
         </div>
     </header>
     <main class="content">
-        <div class="main">
+        <article class="main">
             <div class="swiper main__swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -109,8 +109,8 @@
                     </div>
                 </div>                  
             </div>
-        </div>
-        <div class="about">
+        </article>
+        <article class="about">
             <div class="container">
                 <h2 class="about__title">Найт-Сити изменит тебя навсегда!</h2>
                 <h3 class="about__descr"> <a href="#">Cyberpunk 2077</a> — приключенческая ролевая игра, действие которой происходит в мегаполисе Найт-Сити, где власть, роскошь и модификации тела ценятся выше всего. Ты играешь за V, наёмника в поисках устройства, позволяющего обрести бессмертие. Ты сможешь менять киберимпланты, навыки и стиль игры своего персонажа, исследуя открытый мир, где твои поступки влияют на ход сюжета и всё, что тебя окружает.</h3>
@@ -139,8 +139,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="action">
+        </article>
+        <article class="action">
             <div class="action__line">
                 <img src="img/line.jpg" alt="line">
             </div>
@@ -157,17 +157,24 @@
                 <div class="action__wrapper">
                     <form action="#" class="action__form">
                         <label class="action__form-label">
-                            <input type="name" name="name" id="name" class="action__form-input" placeholder="Как тебя зовут?">
+                            <input type="text" name="name" id="name" class="action__form-input" placeholder="Как тебя зовут?">
                         </label>
                         <label class="action__form-label">
-                            <input type="phone" name="email" id="email" class="action__form-input" placeholder="Твой е-mail">
+                            <input type="tel" name="email" id="email" class="action__form-input" placeholder="Твой е-mail">
                         </label>
                         <div class="action__form-upload--file">
                             <label for="file" class="action__form-upload--label">Прикрепить скриншот</label>
                             <input type="file" name="file" id="file" class="action__form-upload--input" accept=".png, .jpg, .pdf">
                             <p class="action__form-upload--info">.png / .jpg / .pdf</p>
-                        </div>
+                        </div>                                           
                         <button class="action__form-btn">Отправить</button>
+                        <div class="action__form-policy">
+                            <label class="action__form-input--custom">
+                                <input type="checkbox" class="action__form-input--checkbox" required>
+                                <span class="action__form-input--custom"></span>                            
+                            </label>
+                            <span class="action__form-warning">Согласен на обработку персональных данных</span>
+                        </div>
                     </form>
                     <div class="action__prizes">
                         <div class="action__prizes-wrapper">
@@ -185,7 +192,57 @@
                     </div> 
                 </div>
             </div>
-        </div>
+        </article>
+        <article class="hp">
+            <div class="hp__line">
+                <img src="img/line-bottom.jpg" alt="line">
+            </div>
+            <div class="container hp__container">
+                <div class="hp__wrapper">
+                    <div class="hp__left">
+                        <div class="hp__left-img">
+                            <img src="img/HP.png" alt="hp monitor">
+                        </div>
+                        <div class="hp__left-flex">
+                            <div class="hp__left-icon">
+                                <img src="icons/hp-logo.svg" alt="hp monitor logo">
+                            </div>
+                            <div class="hp__left-chewron">
+                                <img src="icons/chewrons.svg" alt="chewrons">
+                            </div>
+                            <div class="hp__left-logo">
+                                <img src="icons/logo.svg" alt="logo">
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="hp__right">
+                        <h2 class="hp__right-title">Полное погружение вместе с HP</h2>
+                        <p class="hp__right-descr">Погрузись в современные экшен-игры с реалистичным изображением с помощью монитора с диагональю 23,8 дюйма, созданном для отображения максимально насыщенных цветов. Успевай реагировать на любые события с временем отклика 1 мс и частотой в 144 Гц!</p>
+                        <ul class="hp__right-list">
+                            <li class="hp__right-list--item">
+                                <div class="hp__right-list--item__img">
+                                    <img src="icons/polytra.svg" alt="politra" class="hp__right-list--img">
+                                </div>
+                                <div class="hp__right-list--item__descr">Яркие насыщенные цвета</div>
+                            </li>
+                            <li class="hp__right-list--item">
+                                <div class="hp__right-list--item__img">
+                                    <img src="icons/magick.svg" alt="politra" class="hp__right-list--img">
+                                </div>
+                                <div class="hp__right-list--item__descr">Кристальная четкость изображения</div>
+                            </li>
+                            <li class="hp__right-list--item">
+                                <div class="hp__right-list--item__img">
+                                    <img src="icons/game.svg" alt="politra" class="hp__right-list--img">
+                                </div>
+                                <div class="hp__right-list--item__descr">Быстрые движения и плавный геймплей</div>
+                            </li>
+                        </ul>
+                        <button class="hp__right-btn">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </article>
     </main>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/slider.js"></script>

@@ -64,7 +64,40 @@
             &:focus {
                 outline: 1px solid $darkColor;
             }
+            &--checkbox {
+                position: absolute;
+                opacity: 0;
+                width: 0;
+                height: 0;
+                cursor: pointer;
+                &:checked + .action__form-input--custom::after {
+                    display: block;
+                }
+            }
+            &--custom {
+                position: relative;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background-color: rgba(0, 0, 0, 0); /* Прозрачный фон */
+                border: 1px solid #777777;
+                border-radius: 3px;
+                transition: all 0.3s;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    display: none;
+                    left: 6px;
+                    top: 2px;
+                    width: 5px;
+                    height: 10px;
+                    border: solid $yelowColor;
+                    border-width: 0 2px 2px 0;
+                    transform: rotate(45deg);
+                }
+            }
         }
+      
         &-upload {
             &--file {
                 width: 100%;
@@ -107,9 +140,21 @@
             line-height: 100%;
             color: $darkColor;
             transition: all .4s ease;
+            margin-bottom: 15px;
             &:hover {
                 background-color: $blueColor;
             }
+        }
+        &-policy {
+            @include wrapperStart;
+            gap: 10px;
+        }
+        &-warning {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 100%;
+            color: $whiteColor;
         }
     }
     &__prizes {       
