@@ -1,0 +1,48 @@
+.footer {
+    &__wrapper {
+        @include wrapper1;
+        padding: 13px 0;
+    }
+    &__logos {
+        @include wrapperStart;
+        gap: 32px;
+    }
+    &__logo {
+        max-width: 296px;
+        height: auto;
+    }
+    &__company {
+        max-width: 172px;
+        height: auto;
+    }
+    &__documents {
+        @include wrapperStart;
+        gap: 32px;
+    }
+    &__document {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        color: $darkColor;
+        transition: all .4s ease;
+        &:hover {
+            color: $yelowColor;
+        }
+    }
+    &__bottom {
+        @include wrapper2;
+        background-color: $darkColor;
+        width: 100%;
+        height:auto;
+        padding: 13px 0;
+        &-company {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 100%;
+            text-align: center;
+            color: $whiteColor;
+        }
+    }
+}

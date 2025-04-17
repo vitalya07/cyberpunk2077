@@ -3,11 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel= "apple-touch-icon"  sizes= "57x57"  href= "favicon/apple-icon-57x57.png" > 
+    <link  rel= "apple-touch-icon"  sizes= "60x60"  href= "favicon/apple-icon-60x60.png" > 
+    <link  rel= "apple-touch-icon"  sizes= "72x72"  href= "favicon/apple-icon-72x72.png" > 
+    <link  rel= "apple-touch-icon"  sizes= "76x76"  href= "favicon/apple-icon-76x76.png" > 
+    <link  rel= "apple-touch-icon"  sizes= "114x114"  href= "favicon/apple-icon-114x114.png" > 
+    <link  rel= "apple-touch-icon"  sizes= "120x120"  href= "favicon/apple-icon-120x120.png" > 
+    <link  rel= "apple-touch-icon"  sizes= "144x144"  href= "favicon/apple-icon-144x144.png" > 
+    <link  rel= "apple-touch-icon"  sizes= "152x152"  href= "favicon/apple-icon-152x152.png" > 
+    <link  rel= "apple-touch-icon"  sizes= "180x180"  href= "favicon/apple-icon-180x180.png" > 
+    <link  rel= "icon"  type= "image/png"  sizes= "192x192"   href= "favicon/android-icon-192x192.png" > 
+    <link  rel= "icon"  type= "image/png"  sizes= "32x32"  href= "favicon/favicon-32x32.png" > 
+    <link  rel= "icon"  type= "image/png"  sizes= "96x96"  href= "favicon/favicon-96x96.png" > 
+    <link  rel= "icon"  type= "image/png"  sizes= "16x16"  href= "favicon/favicon-16x16.png" > 
+    <link  rel= "manifest"  href= "/manifest.json" > 
+    <meta  name= "msapplication-TileColor"  content= "#ffffff" > 
+    <meta  name= "msapplication-TileImage"  content= "/ms-icon-144x144.png" > 
+    <meta  name= "theme-color"  content= "#ffffff" >
     <title>cyberpunk</title>
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+    <div class="modal hide">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <div class="modal__head">
+                    <h3 class="modal__title">Оставьте заявку и мы свяжемся с вами!</h3>
+                    <div class="modal__close"></div>
+                </div>                    
+                <form action="#" class="modal__form">
+                    <label class="modal__form-label">
+                        <input type="text" name="name" id="modal-name" class="modal__form-input" placeholder="Как вас зовут?">
+                    </label>
+                    <label class="modal__form-label">
+                        <input type="tel" name="tel" id="modal-tel" class="modal__form-input" placeholder="+7-999-999-99">
+                    </label>
+                    <button class="modal__form-btn">Оставить заявку</button>
+                    <div class="modal__form-footer">
+                        <label class="modal__form-checked--custom">
+                            <input type="checkbox" class="modal__form-checked" required> 
+                            <span class="modal__form-checked--custom"></span>
+                        </label>
+                        <a href="policy.html" target="_blank" class="modal__form-policy">Согласен на обработку персональных данных</a>
+                    </div>   
+                </form>
+            </div>
+        </div>
+    </div>
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
@@ -16,32 +59,32 @@
                 </a>
                 <ul class="header__list">
                     <li class="header__list-item">
-                        <a href="#" class="header__list-link">
+                        <a href="https://www.youtube.com" target="_blank" class="header__list-link">
                             <img src="icons/youtube.svg" alt="youtube" class="header__list-img">
                         </a>
                     </li>
                     <li class="header__list-item">
-                        <a href="#" class="header__list-link">
+                        <a href="https://vk.com/" target="_blank" class="header__list-link">
                             <img src="icons/vk.svg" alt="vk" class="header__list-img">
                         </a>
                     </li>
                     <li class="header__list-item">
-                        <a href="#" class="header__list-link">
+                        <a href="http://facebook.com.vn" target="_blank" class="header__list-link">
                             <img src="icons/facebook.svg" alt="facebook" class="header__list-img">
                         </a>
                     </li>
                     <li class="header__list-item">
-                        <a href="#" class="header__list-link">
+                        <a href="x.com" target="_blank" class="header__list-link">
                             <img src="icons/twitter.svg" alt="twiter" class="header__list-img">
                         </a>
                     </li>
                     <li class="header__list-item">
-                        <a href="#" class="header__list-link">
+                        <a href="twitch.tv" target="_blank" class="header__list-link">
                             <img src="icons/twitch.svg" alt="twitch" class="header__list-img">
                         </a>
                     </li>
                     <li class="header__list-item">
-                        <a href="#" class="header__list-link">
+                        <a href="instagram.softonic.ru" target="_blank" class="header__list-link">
                             <img src="icons/instagram.svg" alt="instagram" class="header__list-img">
                         </a>
                     </li>
@@ -76,7 +119,7 @@
                             <div class="main__item-img">
                                 <img src="img/img2.jpg" alt="img2">
                             </div>
-                            <div class="main__item-info">
+                            <!-- <div class="main__item-info">
                                 <div class="main__item-info--img">
                                     <picture>
                                         <source media="(max-width: 480px)"  srcset="img/Rectangle-mobile.png">
@@ -86,7 +129,7 @@
                                 </div>
                                <h2 class="main__item-info--title">Доступно на всех платформах</h2>
                                <button class="main__item-info--btn">Узнать больше</button>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -94,7 +137,7 @@
                             <div class="main__item-img">
                                 <img src="img/img3.jpg" alt="img3">
                             </div>
-                            <div class="main__item-info">
+                            <!-- <div class="main__item-info">
                                 <div class="main__item-info--img">
                                     <picture>
                                         <source media="(max-width: 480px)"  srcset="img/Rectangle-mobile.png">
@@ -104,7 +147,7 @@
                                 </div>
                                <h2 class="main__item-info--title">Доступно на всех платформах</h2>
                                <button class="main__item-info--btn">Узнать больше</button>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>                  
@@ -113,7 +156,7 @@
         <article class="about">
             <div class="container">
                 <h2 class="about__title">Найт-Сити изменит тебя навсегда!</h2>
-                <h3 class="about__descr"> <a href="#">Cyberpunk 2077</a> — приключенческая ролевая игра, действие которой происходит в мегаполисе Найт-Сити, где власть, роскошь и модификации тела ценятся выше всего. Ты играешь за V, наёмника в поисках устройства, позволяющего обрести бессмертие. Ты сможешь менять киберимпланты, навыки и стиль игры своего персонажа, исследуя открытый мир, где твои поступки влияют на ход сюжета и всё, что тебя окружает.</h3>
+                <h3 class="about__descr"> <a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/" target="_blank">Cyberpunk 2077</a> — приключенческая ролевая игра, действие которой происходит в мегаполисе Найт-Сити, где власть, роскошь и модификации тела ценятся выше всего. Ты играешь за V, наёмника в поисках устройства, позволяющего обрести бессмертие. Ты сможешь менять киберимпланты, навыки и стиль игры своего персонажа, исследуя открытый мир, где твои поступки влияют на ход сюжета и всё, что тебя окружает.</h3>
                 <div class="about__grid">
                     <div class="about__img about__img-one">
                         <picture>
@@ -152,7 +195,7 @@
                     <h2 class="action__top-title">Играй и выигрывай!</h2>
                 </div>
                 <div class="action__top-descr">
-                    Играй в <a href="#">Cyberpunk 2077</a> и получи возможность выиграть консоль <a href="#">Xbox Series X </a>  или <a href="#">Sony PlayStation 5! </a> Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи!;)
+                    Играй в <a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/" target="_blank">Cyberpunk 2077</a> и получи возможность выиграть консоль <a href="https://www.xbox.com/ru-RU" target="_blank">Xbox Series X </a>  или <a href="https://www.playstation.com/ru-ru/%2F" target="_blank">Sony PlayStation 5! </a> Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи!;)
                 </div>
                 <div class="action__wrapper">
                     <form action="#" class="action__form">
@@ -247,7 +290,11 @@
             <div class="game__wrapper">
                 <div class="game__left">
                     <div class="game__left-img">
-                        <img src="img/cyberpunk2077-ps4.jpg" alt="cyberpunk2077-ps4">
+                        <picture>
+                           <source srcset="img/ps4-bg-mobile.png" media="(max-width:480px)">
+                           <source srcset="img/cyberpunk2077-ps4.jpg" media="(min-width:481px)">
+                           <img src="img/cyberpunk2077-ps4.jpg" alt="cyberpunk2077-ps4">
+                        </picture>                        
                     </div>                        
                 </div>
                 <div class="game__right">
@@ -275,24 +322,50 @@
                     </ul>
                     <h2 class="game__right-subtitle game__right-subtitle--platform">Выберите платформу:</h2>
                     <div class="game__right-grid">
-                        <div class="game__right-grid--img game__right-grid--img__PC">
+                        <a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/" target="_blank" class="game__right-grid--img game__right-grid--img__PC">
                             <img src="img/PC.png" alt="PC">
-                        </div>
-                        <div class="game__right-grid--img game__right-grid--img__Xbox">
+                        </a>
+                        <a href="https://www.xbox.com/ru-RU" target="_blank" class="game__right-grid--img game__right-grid--img__Xbox">
                             <img src="img/xbox-one-logo.png" alt="Xbox">
-                        </div>
-                        <div class="game__right-grid--img game__right-grid--img__stadia">
+                        </a>
+                        <a href="https://stadia.google.com/controller" target="_blank" class="game__right-grid--img game__right-grid--img__stadia">
                             <img src="img/stadia-logo.png" alt="stadia-logo">
-                        </div>
-                        <div class="game__right-grid--img game__right-grid--img__PS">
+                        </a>
+                        <a href="https://www.playstation.com/ru-ru/%2F" target="_blank" class="game__right-grid--img game__right-grid--img__PS">
                             <img src="img/Playstation-logo.png" alt="Playstation">
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>           
         </article>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__logos">
+                    <a href="index.html" class="footer__logo">
+                        <img src="icons/logo.svg" alt="logo">
+                    </a>
+                    <a href="https://www.cdprojektred.com/en" target="_blank" class="footer__company">
+                        <img src="icons/CD_Projekt_logo.svg" alt="CD_Projekt_logo">
+                    </a>
+                </div>
+                <div class="footer__documents">
+                    <a href="license.html" target="_blank" class="footer__document">Лицензия</a>
+                    <a href="policy.html" target="_blank" class="footer__document">Политика конфиденциальности</a>
+                </div>
+            </div>            
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom-company">
+                CD PROJEKT®, Cyberpunk®, Cyberpunk 2077®
+            </div>
+        </div>
+    </footer>
+    
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 </html>

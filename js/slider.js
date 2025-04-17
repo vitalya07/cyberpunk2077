@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', ()=> {
         direction: 'horizontal',
         loop: true,    
         autoplay: {
-            delay: 10000,
+            delay: 3000,
         },
-        speed: 3000,
+        speed: 2000,
     });
 })

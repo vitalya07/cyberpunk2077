@@ -1,0 +1,133 @@
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 100;
+    &__dialog {
+        margin: 100px auto;    
+        max-width: 500px;
+    }
+    &__content {
+        max-width: 500px;
+        min-height: 300px;
+        background-color: $yelowColor;
+        padding: 20px 40px;
+    }
+    &__head {
+        @include wrapperStart;
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+    &__title {
+        font-family: 'Archangelsk', sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 100%;
+        color: $darkColor;
+        max-width: 350px;
+    }
+    &__close {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            width: 60%;
+            height: 2px;
+            background-color: $darkColor;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg) ;
+            width: 60%;
+            height: 2px;
+            background-color: $darkColor;
+        }
+    }
+    &__form {
+        width: 100%;
+        &-input {
+            width: 100%;
+            height: 35px;
+            background-color: #fff;
+            padding: 10px 15px;
+            border: none;
+            margin-bottom: 15px;
+            &:focus {
+                outline: 1px solid $blueColor;
+                box-shadow: 0 0 15px $blueColor;
+            }
+        }
+        &-btn {
+            width: 195px;
+            height: 60px;
+            background-color: $darkColor;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 100%;
+            color: $yelowColor;
+            transition: all .4s ease;
+            margin-bottom: 20px;
+            &:hover {
+                background-color: $blueColor;
+            }
+        }
+        &-footer {
+            @include wrapperStart;
+            gap: 10px;
+        }
+        &-policy {
+            font-family: 'Roboto' sans-serif;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 100%;
+            color: $darkColor;
+        }
+        &-checked {
+            width: 0;
+            opacity: 0;
+            height: 0;
+            position: absolute;
+            cursor: pointer;
+            &:checked + .modal__form-checked--custom::after{
+                display: block;
+            }
+            &--custom {
+                position: relative;
+                display: block;
+                width: 14px;
+                height: 14px;
+                border: 1px solid $grayColor;
+                border-radius: 3px;
+                background-color: rgba(0,0,0,0);
+                transition: all .4s ease;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    display: none;
+                    left: 3px;
+                    top: 1px;
+                    width: 3px;
+                    height: 7px;
+                    border: solid $blueColor;
+                    border-width: 0 2px 2px 0;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+}

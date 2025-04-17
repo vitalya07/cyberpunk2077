@@ -1,6 +1,6 @@
 @media(max-width: 1440px) {
     .header {
-        padding: 20px 36px 0 36px;
+        padding: 20px 36px;
     }
     .about {
         padding: 70px 36px;
@@ -30,6 +30,20 @@
         &__container {
             padding: 70px 36px;
         }
+    }
+    .game {
+        &__left {
+            width: 80%;
+        }
+        &__right {
+            padding-right: 36px;
+        }
+    }
+    .footer {
+        &__wrapper {
+            padding: 0 36px;
+        }
+       
     }
 }
 @media (max-width: 1024px) {
@@ -102,6 +116,11 @@
             max-width: 460px;
         }
     }
+    .game {
+        &__left {
+            width: 332px;
+        }
+    }
 }
 @media(max-width:993px) {
     .hp {
@@ -123,6 +142,30 @@
             &-descr {
                 font-size: 16px;
             }
+        }
+    }
+    .game {
+        &__right {
+            &-title {
+                font-size: 50px;
+            }
+        }
+    }
+    .footer {
+        &__logos {
+            gap: 15px;
+        }
+        &__logo {
+            width: 200px;
+        }
+        &__company {
+            width: 116px;
+        }
+        &__documents {
+            gap: 15px;
+        }
+        &__document {
+            font-size: 16px;
         }
     }
 }
@@ -248,6 +291,46 @@
             max-width: 100%;
         }
     }
+    .game {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__left  {
+            width: 100%;
+            height: 580px;
+            &-img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__right {
+            padding: 20px 12px;
+            height: auto;
+            &-title {
+                font-size: 40px;
+            }
+            &-subtitle {
+                font-size: 20px;
+            }
+            &-item {
+                &--img {
+                    width: 24px;
+                    height: 24px;
+                }
+                &--text {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .footer {
+        &__wrapper {
+            flex-direction: column;
+            @include wrapper2;
+            padding: 40px 12px 25px 12px;
+            gap: 40px;
+        }
+    }
 }
 @media(max-width: 480px) {
     .header {
@@ -353,6 +436,20 @@
             }
         }
     }
+    .game {
+        &__left {
+            height: 180px;
+        }
+        &__right {
+            &-title {
+                font-size: 30px;
+            }
+            &-grid {
+                column-gap: 50px;
+                row-gap: 40px;
+            }
+        }
+    }
 }
 @media(max-width: 380px) {
     .action {
@@ -363,6 +460,21 @@
         }
         &__prizes {
             bottom: 820px
+        }
+    }
+    .footer {
+        &__wrapper {
+            gap: 50px;
+        }
+
+        &__logos {
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        &__documents {
+            flex-direction: column;
+            gap: 15px;
         }
     }
 }
