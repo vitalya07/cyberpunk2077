@@ -110,7 +110,7 @@
                                     </picture>                                   
                                 </div>
                                <h2 class="main__item-info--title">Доступно на всех платформах</h2>
-                               <button class="main__item-info--btn">Узнать больше</button>
+                               <button data-modal class="main__item-info--btn">Узнать больше</button>
                             </div>
                         </div>
                     </div>
@@ -119,17 +119,6 @@
                             <div class="main__item-img">
                                 <img src="img/img2.jpg" alt="img2">
                             </div>
-                            <!-- <div class="main__item-info">
-                                <div class="main__item-info--img">
-                                    <picture>
-                                        <source media="(max-width: 480px)"  srcset="img/Rectangle-mobile.png">
-                                        <source media="(min-width: 481px)"  srcset="img/Rectangle.png">
-                                        <img src="img/Rectangle.png" alt="rectangle" loading="lazy">
-                                    </picture>    
-                                </div>
-                               <h2 class="main__item-info--title">Доступно на всех платформах</h2>
-                               <button class="main__item-info--btn">Узнать больше</button>
-                            </div> -->
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -137,17 +126,6 @@
                             <div class="main__item-img">
                                 <img src="img/img3.jpg" alt="img3">
                             </div>
-                            <!-- <div class="main__item-info">
-                                <div class="main__item-info--img">
-                                    <picture>
-                                        <source media="(max-width: 480px)"  srcset="img/Rectangle-mobile.png">
-                                        <source media="(min-width: 481px)"  srcset="img/Rectangle.png">
-                                        <img src="img/Rectangle.png" alt="rectangle" loading="lazy">
-                                    </picture>    
-                                </div>
-                               <h2 class="main__item-info--title">Доступно на всех платформах</h2>
-                               <button class="main__item-info--btn">Узнать больше</button>
-                            </div> -->
                         </div>
                     </div>
                 </div>                  
@@ -204,6 +182,7 @@
                         </label>
                         <label class="action__form-label">
                             <input type="email" name="email" id="email" class="action__form-input" placeholder="Твой е-mail">
+                            <div class="action__form-input--error" id="email-error">Пожалуйста, введите корректный email</div>
                         </label>
                         <div class="action__form-upload--file">
                             <label for="file" class="action__form-upload--label">Прикрепить скриншот</label>
@@ -281,7 +260,7 @@
                                 <div class="hp__right-list--item__descr">Быстрые движения и плавный геймплей</div>
                             </li>
                         </ul>
-                        <button class="hp__right-btn">Подробнее</button>
+                        <button data-modal class="hp__right-btn">Подробнее</button>
                     </div>
                 </div>
             </div>
@@ -367,5 +346,6 @@
     <script src="js/slider.js"></script>
     <script src="js/header.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/form.js"></script>
 </body>
 </html>

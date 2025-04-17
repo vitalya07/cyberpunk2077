@@ -1,7 +1,6 @@
 const header = document.querySelector('.header');
 const main = document.querySelector('.main');
 let mainOfsetPX = main.offsetHeight;
-console.log(mainOfsetPX)
 window.addEventListener('scroll', ()=> {
     if(window.scrollY > mainOfsetPX) {
         header.style.backgroundColor = 'rgba(248,242,0,.4)';

@@ -450,6 +450,11 @@
             }
         }
     }
+    .modal {
+        &__title {
+            font-size: 20px;
+        }
+    }
 }
 @media(max-width: 380px) {
     .action {

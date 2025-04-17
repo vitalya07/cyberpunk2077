@@ -41,6 +41,9 @@
     &__form {
         max-width: 460px;
         min-height: 383px;
+        &-label {
+            margin-bottom: 35px;
+        }
         &-input {
             width: 100%;
             min-height: 35px;
@@ -73,6 +76,13 @@
                 &:checked + .action__form-input--custom::after {
                     display: block;
                 }
+            }
+            &--error {
+                color: #d34848;
+                font-size: 12px;
+                font-weight: 700;
+                margin-bottom: 35px;
+                display: none;
             }
             &--custom {
                 position: relative;
