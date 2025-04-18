@@ -2,7 +2,7 @@ const modal = document.querySelector('.modal');
 const modalBtn = document.querySelectorAll('[data-modal]');
 
 function openModal() {
-    modal.classList.remove('hiden');
+    modal.classList.remove('hide');
     modal.classList.add('show');
     document.body.style.overflow = 'hidden';
 };
@@ -36,8 +36,7 @@ window.addEventListener('keydown', (e)=> {
     }
 });
 window.addEventListener('scroll', ()=> {
-    setTimeout(()=> {
-        checkScroll()  
-    }, 3000)
+    checkScroll()  
+    
 })
 

@@ -66,6 +66,13 @@
                 outline: 1px solid $blueColor;
                 box-shadow: 0 0 15px $blueColor;
             }
+            &--error {
+                color: #d34848;
+                font-size: 12px;
+                font-weight: 700;
+                margin-bottom: 10px;
+                display: none;
+            }
         }
         &-btn {
             width: 195px;

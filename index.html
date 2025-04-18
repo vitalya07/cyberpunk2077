@@ -21,6 +21,7 @@
     <meta  name= "msapplication-TileImage"  content= "/ms-icon-144x144.png" > 
     <meta  name= "theme-color"  content= "#ffffff" >
     <title>cyberpunk</title>
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -35,9 +36,11 @@
                 <form action="#" class="modal__form">
                     <label class="modal__form-label">
                         <input type="text" name="name" id="modal-name" class="modal__form-input" placeholder="Как вас зовут?">
+                        <p class="modal__form-input--error" id="modal-name--error" >Пожалуйста введите корректный Email</p>
                     </label>
                     <label class="modal__form-label">
                         <input type="tel" name="tel" id="modal-tel" class="modal__form-input" placeholder="+7-999-999-99">
+                        <p class="modal__form-input--error" id="modal-tel--error"> Пожалуйста введите корректный телефон</p>
                     </label>
                     <button class="modal__form-btn">Оставить заявку</button>
                     <div class="modal__form-footer">
@@ -171,7 +174,7 @@
                 </div>
             </div>
         </article>
-        <article class="action">
+        <article class="wow animate__animated animate__fadeInUpBig action">
             <div class="action__line">
                 <img src="img/line.jpg" alt="line">
             </div>
@@ -227,7 +230,7 @@
                 </div>
             </div>
         </article>
-        <article class="hp">
+        <article class="wow animate__animated animate__fadeInUpBig hp">
             <div class="hp__line">
                 <img src="img/line-bottom.jpg" alt="line">
             </div>
@@ -277,7 +280,7 @@
                 </div>
             </div>
         </article>
-        <article class="game">           
+        <article class="wow animate__animated animate__fadeInUpBig game">           
             <div class="game__wrapper">
                 <div class="game__left">
                     <div class="game__left-img">
@@ -353,7 +356,8 @@
             </div>
         </div>
     </footer>
-    
+    <script src="js/wow.min.js"></script>
+    <script src="js/animate.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/header.js"></script>
