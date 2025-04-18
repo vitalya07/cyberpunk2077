@@ -12,6 +12,16 @@ function exitModal() {
     document.body.style.overflow = '';
 };
 
+function checkScroll() {
+    const scrollPosition = window.innerHeight + window.scrollY;
+    const documentHeight = document.documentElement.scrollHeight;
+    if(scrollPosition >= documentHeight) {
+        openModal();
+        window.removeEventListener('scroll', checkScroll)
+    }
+};
+
+
 modalBtn.forEach(btn=> {
     btn.addEventListener('click', openModal);
 });
@@ -24,4 +34,10 @@ window.addEventListener('keydown', (e)=> {
     if(e.code === 'Escape' && modal.classList.contains('show')) {
         exitModal();
     }
+});
+window.addEventListener('scroll', ()=> {
+    setTimeout(()=> {
+        checkScroll()  
+    }, 3000)
 })
+
