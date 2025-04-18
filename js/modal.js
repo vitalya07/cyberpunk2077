@@ -1,5 +1,6 @@
 const modal = document.querySelector('.modal');
 const modalBtn = document.querySelectorAll('[data-modal]');
+let isModalOpen = false;
 
 function openModal() {
     modal.classList.remove('hide');
@@ -16,9 +17,11 @@ function checkScroll() {
     const scrollPosition = window.innerHeight + window.scrollY;
     const documentHeight = document.documentElement.scrollHeight;
     if(scrollPosition >= documentHeight) {
-        openModal();
-        window.removeEventListener('scroll', checkScroll)
-    }
+        openModal();   
+        if (openModal()) {
+            window.removeEventListener('scroll', checkScroll);
+        }    
+    }  
 };
 
 
@@ -36,7 +39,6 @@ window.addEventListener('keydown', (e)=> {
     }
 });
 window.addEventListener('scroll', ()=> {
-    checkScroll()  
-    
+    checkScroll()     
 })
 
